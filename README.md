@@ -14,10 +14,10 @@ vorm van een x- en een y-coordinaat. Dit zijn niet-negatieve gehele getallen ≤
 gescheiden door een spatie. Als output geef je het kwadraat van de minimale afstand tussen
 twee posities in de verzameling van n posities."
 
-Om dit snel genoeg op te lossen wordt **recursie** gebruikt. Eerst worden de vliegtuigen gesorteerd op x coordinaat. Vervolgens wordt (recursief) bekeken of de vliegtuigen met de kleinste afstand in de linker- of rechterhelft van de middelste x coordinaat zitten. De base case voor deze recursie is als er maar 1 vliegtuig is, dan wordt de afstand als MAXINT ingesteld. Vervolgens wordt bekeken of de kortse afstand misschien over de middengrens gaat. Dit kan en moet in **O(1)** tijd, een uitleg van hoe dit precies kan is te vinden door Closest-Points problem te googlen.
+Om dit snel genoeg op te lossen wordt ***recursie*** gebruikt. Eerst worden de vliegtuigen gesorteerd op x coordinaat. Vervolgens wordt (recursief) bekeken of de vliegtuigen met de kleinste afstand in de linker- of rechterhelft van de middelste x coordinaat zitten. De base case voor deze recursie is als er maar 1 vliegtuig is, dan wordt de afstand als MAXINT ingesteld. Vervolgens wordt bekeken of de kortse afstand misschien over de middengrens gaat. Dit kan en moet in **O(1)** tijd, een uitleg van hoe dit precies kan is te vinden door Closest-Points problem te googlen.
 
 Hiervoor heb ik een simpele Point class gemaakt, met een x- en y-coordinaat als properties.
-Ook heb ik de **IComparer interface** gebruikt om Point-objecten op x- of y-coordinaat te kunnen vergelijken.
+Ook heb ik de ***IComparer interface*** gebruikt om Point-objecten op x- of y-coordinaat te kunnen vergelijken.
 
 ---------------
-Dit is in feite het **Closest Points probleem**
+Dit is in feite het ***Closest Points probleem***
